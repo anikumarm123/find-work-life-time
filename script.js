@@ -27,36 +27,36 @@ function fun(num) {
     var month = num;
     console.log(month);
     if (year_val % 4 == 0 && month == "Feb") {
+        day_select.innerHTML='';
         for (i = 1; i <= 29; i++) {
          var day_option = document.createElement('option'); 
          day_option.textContent=i;
          day_select.append(day_option);
-        
         }   
         
     }
     else {
+        day_select.innerHTML='';
        for(i =1;i <= 28 ;i++){
         var day_option = document.createElement('option'); 
          day_option.textContent=i;
          day_select.append(day_option);
-         
        }
     }
     if(month == "Jan"|| month =="Mar"||month=="May"||month=="Jul"||month=="Auc"||month=="Oct"||month=="Dec"){
+        day_select.innerHTML='';
         for(i=1;i<= 31;i++){
         var day_option = document.createElement('option'); 
          day_option.textContent=i;
          day_select.append(day_option);
-         
         }
     }
     else if(month == "Apr"|| month =="Jun"||month=="Sep"||month=="Nov"){
+        day_select.innerHTML='';
         for(i=0;i<= 30;i++){
         var day_option = document.createElement('option'); 
          day_option.textContent=i;
          day_select.append(day_option);
-         
         }
     }
     
